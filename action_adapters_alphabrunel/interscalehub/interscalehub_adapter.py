@@ -18,7 +18,7 @@ import pickle
 import base64
 
 from common.utils.security_utils import check_integrity
-from actions_adapters.setup_result_directories import SetupResultDirectories
+from action_adapters_alphabrunel.setup_result_directories import SetupResultDirectories
 from EBRAINS_InterscaleHUB.Interscale_hub.manager_nest_to_tvb import NestToTvbManager
 from EBRAINS_InterscaleHUB.Interscale_hub.manager_tvb_to_nest import TvbToNestManager
 from EBRAINS_InterscaleHUB.Interscale_hub.interscalehub_enums import DATA_EXCHANGE_DIRECTION 

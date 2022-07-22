@@ -8,7 +8,7 @@ import pickle
 import base64
 
 from common.utils.security_utils import check_integrity
-from actions_adapters.parameters import Parameters
+from action_adapters_alphabrunel.parameters import Parameters
 import cosim_example_demos.TVB_NEST_demo.tvb_sim.wrapper_TVB_mpi as Wrapper
 from EBRAINS_RichEndpoint.Application_Companion.common_enums import SteeringCommands
 from EBRAINS_RichEndpoint.Application_Companion.common_enums import INTEGRATED_SIMULATOR_APPLICATION as SIMULATOR

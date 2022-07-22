@@ -16,10 +16,10 @@ import sys
 import pickle
 import base64
 
-from actions_adapters.nest_simulator.utils_function import wait_transformation_modules
-from actions_adapters.nest_simulator.utils_function import get_data
+from action_adapters_alphabrunel.nest_simulator.utils_function import wait_transformation_modules
+from action_adapters_alphabrunel.nest_simulator.utils_function import get_data
 from common.utils.security_utils import check_integrity
-from actions_adapters.parameters import Parameters
+from action_adapters_alphabrunel.parameters import Parameters
 from EBRAINS_RichEndpoint.Application_Companion.common_enums import SteeringCommands
 from EBRAINS_RichEndpoint.Application_Companion.common_enums import INTEGRATED_SIMULATOR_APPLICATION as SIMULATOR
 from EBRAINS_ConfigManager.global_configurations_manager.xml_parsers.default_directories_enum import DefaultDirectories
