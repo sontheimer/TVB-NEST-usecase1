@@ -1,6 +1,6 @@
 [submodule "EBRAINS_InterscaleHUB"]
 	path = EBRAINS_InterscaleHUB
-	url = https://github.com/multiscale-cosim/EBRAINS-InterscaleHUB.git
+	url = https://github.com/sontheimer/EBRAINS_InterscaleHUB.git
 	branch = online_uea
 [submodule "EBRAINS_RichEndpoint"]
 	path = EBRAINS_RichEndpoint
