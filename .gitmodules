@@ -20,5 +20,5 @@
 	branch = main
 [submodule "nest-simulator"]
 	path = nest-simulator
-	url = https://github.com/mfahdaz/nest-simulator.git
-	branch = cosim_mpi_patch
+	url = https://github.com/sontheimer/nest-simulator.git
+	branch = cosim-mpi-patch
