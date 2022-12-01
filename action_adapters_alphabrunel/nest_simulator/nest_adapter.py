@@ -27,9 +27,11 @@ from EBRAINS_ConfigManager.global_configurations_manager.xml_parsers.configurati
 from EBRAINS_ConfigManager.workflow_configurations_manager.xml_parsers.xml2class_parser import Xml2ClassParser
 from EBRAINS_InterscaleHUB.Interscale_hub.interscalehub_enums import DATA_EXCHANGE_DIRECTION
 
-import nest
+#import nest
 import nest.raster_plot
 import matplotlib.pyplot as plt
+from NESTServerClient import NESTServerClient
+nest=NESTServerClient
 
 
 class NESTAdapter:
