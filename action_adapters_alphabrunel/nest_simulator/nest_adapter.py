@@ -217,7 +217,7 @@ class NESTAdapter:
         self.__logger.debug("executing INIT command")
 
         if NEST_DESKTOP:
-            nodes = [] # nest.GetNodes()
+            nodes = nest.userdict['nodes'] # Get nodes from userdict
         else:
             nest.ResetKernel()
             nest.SetKernelStatus(
