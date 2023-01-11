@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/version')
 def version():
-	return "0.0.1"
+	return "0.1.0"
 
 
 def get_arguments(request):
@@ -38,17 +38,17 @@ def get_arguments(request):
 			kwargs = request.args.to_dict()
 	return list(args), kwargs
 
-@app.route('/exec', methods=['GET', 'POST', 'OPTIONS'])
-def script():
-	args, kwargs = get_arguments(request)
+# @app.route('/exec', methods=['GET', 'POST', 'OPTIONS'])
+# def script():
+# 	args, kwargs = get_arguments(request)
 
-	file_loader = FileSystemLoader('templates')
-	env = Environment(loader=file_loader)
-	template = env.get_template('nest_adapter.py.template')
-	output = template.render(NEST_DESKTOP_SCRIPT=kwargs['source'])
-	with open("nest_adapter.py", "w") as f:
-		f.write(output)
-	return output
+# 	file_loader = FileSystemLoader('templates')
+# 	env = Environment(loader=file_loader)
+# 	template = env.get_template('nest_adapter.py.template')
+# 	output = template.render(NEST_DESKTOP_SCRIPT=kwargs['source'])
+# 	with open("nest_adapter.py", "w") as f:
+# 		f.write(output)
+# 	return output
 
 
 @app.route('/start_cosim')
@@ -58,4 +58,4 @@ def start_cosim():
 
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0")
+	app.run(host="0.0.0.0", port="52428")
